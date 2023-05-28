@@ -7,8 +7,8 @@ public class TaskTest {
     @Test
     public void MatchSimple() {
 
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям"); //здесь кладем объект
-        boolean actual = simpleTask.matches("Позвонить"); //здесь вызываем метод из SimpleTask
+        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
+        boolean actual = simpleTask.matches("Позвонить");
         boolean expected = true;
         Assertions.assertEquals(expected, actual);
     }
@@ -18,7 +18,7 @@ public class TaskTest {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         boolean expected = true;
-        boolean actual = epic.matches("Хлеб");//здесь вызываем метод из epic boolean expected = true;
+        boolean actual = epic.matches("Хлеб");
         Assertions.assertEquals(expected, actual);
     }
 
@@ -59,8 +59,8 @@ public class TaskTest {
     @Test
     public void MatchSimple4() {
 
-        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям"); //здесь кладем объект
-        boolean actual = simpleTask.matches("учителю"); //здесь вызываем метод из SimpleTask
+        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
+        boolean actual = simpleTask.matches("учителю");
         boolean expected = false;
         Assertions.assertEquals(expected, actual);
     }
@@ -70,7 +70,7 @@ public class TaskTest {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         boolean expected = false;
-        boolean actual = epic.matches("Сосиски");//здесь вызываем метод из epic boolean expected = true;
+        boolean actual = epic.matches("Сосиски");
         Assertions.assertEquals(expected, actual);
     }
 
