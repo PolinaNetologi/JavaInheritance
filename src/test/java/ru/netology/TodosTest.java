@@ -30,7 +30,7 @@ public class TodosTest {
 
     @Test
     public void shouldTask() {
-        Todos todos = new Todos();//здесь кладем объект
+        Todos todos = new Todos();
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);

@@ -6,10 +6,10 @@ public class Meeting extends Task {
     protected String start;
 
     public Meeting(int id, String topic, String project, String start) {
-        super(id); // вызов родительского конструктора
+        super(id);
         this.topic = topic;
         this.project = project;
-        this.start = start;// заполнение своих полей
+        this.start = start;
     }
 
     public String getTopic() {
